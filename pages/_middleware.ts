@@ -1,6 +1,8 @@
-import type { NextFetchEvent, NextRequest } from 'next/server'
+import type { NextFetchEvent, NextRequest} from 'next/server'
+import { NextResponse } from 'next/server'
 
 export function middleware(req: NextRequest, ev: NextFetchEvent) {
-  console.log("Hello Middleware")
-  return new Response('Hello, world!')
+  const res = NextResponse.next()
+  res.headers.append('custom-header', 'test')
+  return res
 }

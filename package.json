@@ -9,13 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "next",
+    "@fortawesome/free-brands-svg-icons": "next",
+    "@fortawesome/free-regular-svg-icons": "next",
+    "@fortawesome/react-fontawesome": "latest",
     "atropos": "^1.0.0",
     "autoprefixer": "^10.0.0",
     "next": "latest",
+    "next-transpile-modules": "^9.0.0",
     "postcss": "^8.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "tailwindcss": "^2.0.0"
+    "swiper": "^7.2.0",
+    "tailwindcss": "^2.0.0",
+    "ts3-nodejs-library": "^3.4.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.6",

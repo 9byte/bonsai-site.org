@@ -105,6 +105,52 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-common-types@npm:^0.3.0-beta2":
+  version: 0.3.0-beta2
+  resolution: "@fortawesome/fontawesome-common-types@npm:0.3.0-beta2"
+  checksum: d7d3014dc4a6e2c900b18d7a9df5a8303098f5455c9fe75c4dbc0cc0682ac6c21e2a61e1a8d77064d9c9fdfe7a9917a7a088f54e28adaed6fed814f474eca869
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-svg-core@npm:next":
+  version: 1.3.0-beta2
+  resolution: "@fortawesome/fontawesome-svg-core@npm:1.3.0-beta2"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.3.0-beta2
+  checksum: 4433876838befdab4d2cfbc4463cc21defb883eae1f50a527f8a55476350ad82f6b6924b9178538e5665e00dfb1c3a2d1767ef555dfc8337ee8d6943d645ea55
+  languageName: node
+  linkType: hard
+
+"@fortawesome/free-brands-svg-icons@npm:next":
+  version: 6.0.0-beta2
+  resolution: "@fortawesome/free-brands-svg-icons@npm:6.0.0-beta2"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.3.0-beta2
+  checksum: 58d65b190e94bd77e3399288ce0684462730ffc81a947c58cb7d4abd5bfbf258f63da06edff40ee2a8a7c3817a332ec76b4609ab00cd5eb043b8f3830ada60a9
+  languageName: node
+  linkType: hard
+
+"@fortawesome/free-regular-svg-icons@npm:next":
+  version: 6.0.0-beta2
+  resolution: "@fortawesome/free-regular-svg-icons@npm:6.0.0-beta2"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.3.0-beta2
+  checksum: 391524048539bdd7289c7cecbd74c5414f8a3353f62729fc768e53c15dae6f1cd53df44736c39cb3773ec45a9f470085d76f0546f8317eec8c6f527b75f71317
+  languageName: node
+  linkType: hard
+
+"@fortawesome/react-fontawesome@npm:latest":
+  version: 0.1.16
+  resolution: "@fortawesome/react-fontawesome@npm:0.1.16"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@fortawesome/fontawesome-svg-core": ~1 || >=1.3.0-beta1
+    react: ">=16.x"
+  checksum: 22e7f624ab29ef47ccd21ebc57c1b92d01596472f73fdeee860236ad4976353436d0780bdccf927f9d7b6713081e2cef7a93c88305dd330244c54408c35a6dc4
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -748,6 +794,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"asn1@npm:^0.2.4":
+  version: 0.2.6
+  resolution: "asn1@npm:0.2.6"
+  dependencies:
+    safer-buffer: ~2.1.0
+  checksum: 39f2ae343b03c15ad4f238ba561e626602a3de8d94ae536c46a4a93e69578826305366dc09fbb9b56aec39b4982a463682f259c38e59f6fa380cd72cd61e493d
+  languageName: node
+  linkType: hard
+
 "assert@npm:2.0.0":
   version: 2.0.0
   resolution: "assert@npm:2.0.0"
@@ -834,6 +889,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bcrypt-pbkdf@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "bcrypt-pbkdf@npm:1.0.2"
+  dependencies:
+    tweetnacl: ^0.14.3
+  checksum: 4edfc9fe7d07019609ccf797a2af28351736e9d012c8402a07120c4453a3b789a15f2ee1530dc49eee8f7eb9379331a8dd4b3766042b9e502f74a68e7f662291
+  languageName: node
+  linkType: hard
+
 "big.js@npm:^5.2.2":
   version: 5.2.2
   resolution: "big.js@npm:5.2.2"
@@ -866,6 +930,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bonsai-landing@workspace:."
   dependencies:
+    "@fortawesome/fontawesome-svg-core": next
+    "@fortawesome/free-brands-svg-icons": next
+    "@fortawesome/free-regular-svg-icons": next
+    "@fortawesome/react-fontawesome": latest
     "@types/node": ^16.11.6
     "@types/react": ^17.0.33
     atropos: ^1.0.0
@@ -873,10 +941,13 @@ __metadata:
     eslint: ^7.0.0
     eslint-config-next: ^12.0.0
     next: latest
+    next-transpile-modules: ^9.0.0
     postcss: ^8.0.0
     react: ^17.0.0
     react-dom: ^17.0.0
+    swiper: ^7.2.0
     tailwindcss: ^2.0.0
+    ts3-nodejs-library: ^3.4.0
     typescript: ^4.4.4
   languageName: unknown
   linkType: soft
@@ -1007,6 +1078,13 @@ __metadata:
   bin:
     browserslist: cli.js
   checksum: 0a1d762305c39dd317bb21e3159f44250bb1029a497f9a901ef5066f909263372eaacda58fd39174121c2741c0c32a7e6ace04df9172abe22c2fb69eba139a01
+  languageName: node
+  linkType: hard
+
+"buffer-crc32@npm:^0.2.13":
+  version: 0.2.13
+  resolution: "buffer-crc32@npm:0.2.13"
+  checksum: 06252347ae6daca3453b94e4b2f1d3754a3b146a111d81c68924c22d91889a40623264e95e67955b1cb4a68cbedf317abeabb5140a9766ed248973096db5ce1c
   languageName: node
   linkType: hard
 
@@ -1342,6 +1420,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cpu-features@npm:0.0.2":
+  version: 0.0.2
+  resolution: "cpu-features@npm:0.0.2"
+  dependencies:
+    nan: ^2.14.1
+    node-gyp: latest
+  checksum: 15177f9a2d465e4d84390f902c977b34f237dadb29fd8553853b13d906ffe5f15be9f091c72db4f34c71412d5ff4e0e4edf04caebc875b02d1d7ecfce2963299
+  languageName: node
+  linkType: hard
+
 "create-ecdh@npm:^4.0.0":
   version: 4.0.4
   resolution: "create-ecdh@npm:4.0.4"
@@ -1627,6 +1715,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dom7@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "dom7@npm:4.0.1"
+  dependencies:
+    ssr-window: ^4.0.0
+  checksum: 5572cb46f25e447f3ad0bbedccb73c1a381459fab30aa3688579f52601fdc9d1c0f6b06ea84dff1aecb5f550c435f904f6b3649625cee2f141daf811f960803a
+  languageName: node
+  linkType: hard
+
 "domain-browser@npm:4.19.0":
   version: 4.19.0
   resolution: "domain-browser@npm:4.19.0"
@@ -1683,6 +1780,16 @@ __metadata:
   dependencies:
     iconv-lite: ^0.6.2
   checksum: bb98632f8ffa823996e508ce6a58ffcf5856330fde839ae42c9e1f436cc3b5cc651d4aeae72222916545428e54fd0f6aa8862fd8d25bdbcc4589f1e3f3715e7f
+  languageName: node
+  linkType: hard
+
+"enhanced-resolve@npm:^5.7.0":
+  version: 5.8.3
+  resolution: "enhanced-resolve@npm:5.8.3"
+  dependencies:
+    graceful-fs: ^4.2.4
+    tapable: ^2.2.0
+  checksum: d79fbe531106448b768bb0673fb623ec0202d7ee70373ab7d4f4745d5dfe0806f38c9db7e7da8c941288fe475ab3d538db3791fce522056eeea40ca398c9e287
   languageName: node
   linkType: hard
 
@@ -2395,7 +2502,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.6":
+"graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.4, graceful-fs@npm:^4.2.6":
   version: 4.2.8
   resolution: "graceful-fs@npm:4.2.8"
   checksum: 5d224c8969ad0581d551dfabdb06882706b31af2561bd5e2034b4097e67cc27d05232849b8643866585fd0a41c7af152950f8776f4dd5579e9853733f31461c6
@@ -3399,6 +3506,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nan@npm:^2.14.1, nan@npm:^2.15.0":
+  version: 2.15.0
+  resolution: "nan@npm:2.15.0"
+  dependencies:
+    node-gyp: latest
+  checksum: 33e1bb4dfca447fe37d4bb5889be55de154828632c8d38646db67293a21afd61ed9909cdf1b886214a64707d935926c4e60e2b09de9edfc2ad58de31d6ce8f39
+  languageName: node
+  linkType: hard
+
 "nanoid@npm:^3.1.23, nanoid@npm:^3.1.30":
   version: 3.1.30
   resolution: "nanoid@npm:3.1.30"
@@ -3426,6 +3542,16 @@ __metadata:
   version: 2.6.2
   resolution: "neo-async@npm:2.6.2"
   checksum: deac9f8d00eda7b2e5cd1b2549e26e10a0faa70adaa6fdadca701cc55f49ee9018e427f424bac0c790b7c7e2d3068db97f3093f1093975f2acb8f8818b936ed9
+  languageName: node
+  linkType: hard
+
+"next-transpile-modules@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "next-transpile-modules@npm:9.0.0"
+  dependencies:
+    enhanced-resolve: ^5.7.0
+    escalade: ^3.1.1
+  checksum: 9a5d86d80cedc2404b2b1d5bd4994f2f7bf60e5e20f24e8cc5cfec34da1418b4a439916f37a95ca336bcf6d81094c3647354ac6a0c6737b3df59e62b6380507d
   languageName: node
   linkType: hard
 
@@ -4493,7 +4619,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"safer-buffer@npm:>= 2.1.2 < 3, safer-buffer@npm:>= 2.1.2 < 3.0.0, safer-buffer@npm:^2.1.0":
+"safer-buffer@npm:>= 2.1.2 < 3, safer-buffer@npm:>= 2.1.2 < 3.0.0, safer-buffer@npm:^2.1.0, safer-buffer@npm:~2.1.0":
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: cab8f25ae6f1434abee8d80023d7e72b598cf1327164ddab31003c51215526801e40b66c5e65d658a0af1e9d6478cadcb4c745f4bd6751f97d8644786c0978b0
@@ -4693,6 +4819,30 @@ __metadata:
   version: 1.0.3
   resolution: "sprintf-js@npm:1.0.3"
   checksum: 19d79aec211f09b99ec3099b5b2ae2f6e9cdefe50bc91ac4c69144b6d3928a640bb6ae5b3def70c2e85a2c3d9f5ec2719921e3a59d3ca3ef4b2fd1a4656a0df3
+  languageName: node
+  linkType: hard
+
+"ssh2@npm:^1.4.0":
+  version: 1.5.0
+  resolution: "ssh2@npm:1.5.0"
+  dependencies:
+    asn1: ^0.2.4
+    bcrypt-pbkdf: ^1.0.2
+    cpu-features: 0.0.2
+    nan: ^2.15.0
+  dependenciesMeta:
+    cpu-features:
+      optional: true
+    nan:
+      optional: true
+  checksum: 6a2252c12d9587eeb31c499d1d13bb14a255d08243762e1a92b2db76add8912b2c8c25103c79b92e156d598c1e2781c5523b58aa9e85aee06fea365e4cc188bb
+  languageName: node
+  linkType: hard
+
+"ssr-window@npm:^4.0.0, ssr-window@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "ssr-window@npm:4.0.1"
+  checksum: 177baff9535131ab8673d3a63f86e16d1890ea845c89d31cfa71e3a9e89dccf46a7f6a031c31db520f78441155b64d6e2f3c07717ab442ab9e9f7027b9171786
   languageName: node
   linkType: hard
 
@@ -4931,6 +5081,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swiper@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "swiper@npm:7.2.0"
+  dependencies:
+    dom7: ^4.0.1
+    ssr-window: ^4.0.1
+  checksum: 2c7181356bf0bdd7edeec2777d1a90bda54b68d40ce11013a4c79c7014d5c5878c6ca652f8555bec47bbebede68bc82b79a8e31ceb210c2996af08fd44c7d41d
+  languageName: node
+  linkType: hard
+
 "table@npm:^6.0.9":
   version: 6.7.2
   resolution: "table@npm:6.7.2"
@@ -4988,6 +5148,13 @@ __metadata:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
   checksum: 660e8086fa2758f273b7ec87067c041185454374c5c916c236f9691b1c60c48166b2556b6327b3d912f018f48712105fa979b7f717b2db3111ea0850059a2b62
+  languageName: node
+  linkType: hard
+
+"tapable@npm:^2.2.0":
+  version: 2.2.1
+  resolution: "tapable@npm:2.2.1"
+  checksum: 3b7a1b4d86fa940aad46d9e73d1e8739335efd4c48322cb37d073eb6f80f5281889bf0320c6d8ffcfa1a0dd5bfdbd0f9d037e252ef972aca595330538aac4d51
   languageName: node
   linkType: hard
 
@@ -5062,6 +5229,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ts3-nodejs-library@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "ts3-nodejs-library@npm:3.4.0"
+  dependencies:
+    buffer-crc32: ^0.2.13
+    ssh2: ^1.4.0
+  checksum: 2a34c6c354b566b39ea56398593b3d65a394191aaf0585a33c7421672b3a44165a119e79edb3d49f7492d0e4ff5517e9ada182a6f0af72fffa46ca5ea751fb4b
+  languageName: node
+  linkType: hard
+
 "tsconfig-paths@npm:^3.11.0, tsconfig-paths@npm:^3.9.0":
   version: 3.11.0
   resolution: "tsconfig-paths@npm:3.11.0"
@@ -5096,6 +5273,13 @@ __metadata:
   version: 0.0.1
   resolution: "tty-browserify@npm:0.0.1"
   checksum: 93b745d43fa5a7d2b948fa23be8d313576d1d884b48acd957c07710bac1c0d8ac34c0556ad4c57c73d36e11741763ef66b3fb4fb97b06b7e4d525315a3cd45f5
+  languageName: node
+  linkType: hard
+
+"tweetnacl@npm:^0.14.3":
+  version: 0.14.5
+  resolution: "tweetnacl@npm:0.14.5"
+  checksum: 6061daba1724f59473d99a7bb82e13f211cdf6e31315510ae9656fefd4779851cb927adad90f3b488c8ed77c106adc0421ea8055f6f976ff21b27c5c4e918487
   languageName: node
   linkType: hard
 
